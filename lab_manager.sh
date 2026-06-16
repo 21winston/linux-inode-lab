@@ -9,7 +9,7 @@ init_lab() {
 echo "[+] Creating 20MB virtual disk image..."
 dd if=/dev/zero of="$IMAGE_NAME" bs=1M count=20 status=none
 
-```
+
 echo "[+] Formatting EXT4 filesystem with 128 inodes..."
 mkfs.ext4 -N 128 "$IMAGE_NAME" > /dev/null 2>&1
 
@@ -43,14 +43,14 @@ echo "  touch test.txt"
 echo
 echo "Observe that storage space remains,"
 echo "but no free inodes are available."
-```
+
 
 }
 
 clean_lab() {
 echo "[+] Cleaning up..."
 
-```
+
 if mountpoint -q "$MOUNT_DIR"; then
     sudo umount "$MOUNT_DIR"
 fi
@@ -60,7 +60,7 @@ rm -f "$IMAGE_NAME"
 
 echo
 echo "Cleanup complete."
-```
+
 
 }
 
