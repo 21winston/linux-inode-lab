@@ -105,7 +105,8 @@ which df
 Clone the repository:
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone git clone git@github.com:21winston/linux-inode-lab.git (for ssh)
+git clone https://github.com/21winston/linux-inode-lab.git (for https)
 cd linux-inode-lab
 chmod +x lab_manager.sh
 ```
