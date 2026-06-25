@@ -3,7 +3,7 @@
 set -e
 
 IMAGE_NAME="disk.img"
-MOUNT_DIR="./lab_mount"
+MOUNT_DIR="./lab_mount" 
 
 init_lab() {
 echo "[+] Creating 20MB virtual disk image..."
